@@ -1,5 +1,8 @@
 fetch(
-  "https://cdn.jsdelivr.net/gh/FunnelAI/Chat_widget_build@staging/build/asset-manifest.json"
+  "https://raw.githubusercontent.com/FunnelAI/Chat_widget_build/staging/build/asset-manifest.json",
+  {
+    cache: "no-cache",
+  }
 ).then((res) => {
   res.text().then((d) => {
     const files = JSON.parse(d);
