@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script engagedAi-Uid="2ce27b521cc946329b49be168dcfa7e8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#667eea" />
+    <meta name="description" content="EngagedAi Professional Services - Complete automotive solutions" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>EngagedAi - Professional Services</title>
+    
+    <!-- Modern Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f8fafc;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header */
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #667eea;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #64748b;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: #667eea;
+        background: rgba(102, 126, 234, 0.1);
+      }
+
+      /* Demo Banner */
+      .demo-banner {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 0.75rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+
+      /* Main Content */
+      .main {
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
+      }
+
+      /* Section Styling */
+      .section {
+        padding: 5rem 0;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #1e293b;
+      }
+
+      .section-subtitle {
+        font-size: 1.125rem;
+        color: #64748b;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Services Grid */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .service-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .service-icon {
+        font-size: 2.5rem;
+        color: #667eea;
+        margin-bottom: 1rem;
+        display: block;
+      }
+
+      .service-card h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: #1e293b;
+      }
+
+      .service-card p {
+        color: #64748b;
+        font-size: 0.95rem;
+      }
+
+      /* Mobile Responsive */
+      @media (max-width: 768px) {
+        .nav-menu {
+          display: none;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Demo Banner -->
+    <div class="demo-banner">
+      🚀 Chat Widget Demo - Multi-page caching test! Widget loads from cache across pages.
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <i class="fas fa-car-side"></i>
+          EngagedAi
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="inventory.html" class="nav-link">Inventory</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Comprehensive Services</h2>
+            <p class="section-subtitle">Complete automotive solutions tailored to your luxury vehicle needs</p>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <i class="fas fa-tools service-icon"></i>
+              <h3>Premium Maintenance</h3>
+              <p>Expert care and maintenance services to keep your luxury vehicle performing at its peak.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-paint-roller service-icon"></i>
+              <h3>Collision Repair</h3>
+              <p>Professional bodywork and paint services to restore your vehicle to pristine condition.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-calculator service-icon"></i>
+              <h3>Luxury Financing</h3>
+              <p>Flexible financing and leasing options designed for luxury vehicle acquisitions.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-shield-alt service-icon"></i>
+              <h3>Extended Warranty</h3>
+              <p>Comprehensive protection plans to safeguard your investment for years to come.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-concierge-bell service-icon"></i>
+              <h3>Concierge Service</h3>
+              <p>White-glove service including pickup, delivery, and personalized vehicle care.</p>
+            </div>
+            <div class="service-card">
+              <i class="fas fa-exchange-alt service-icon"></i>
+              <h3>Trade-In Program</h3>
+              <p>Premium valuations and seamless trade-in process for your current vehicle.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Initialize application
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('🚀 EngagedAi Services Page Loaded - Chat widget should load from cache!');
+        
+        // Add smooth scrolling
+        document.documentElement.style.scrollBehavior = 'smooth';
+      });
+
+      // Development utilities for cache testing
+      window.checkCacheStatus = function() {
+        const widgetUid = '2ce27b521cc946329b49be168dcfa7e8';
+        const cacheKey = `eai_widget_cache_${widgetUid}`;
+        const expiryKey = `${cacheKey}_expiry`;
+        
+        const status = {
+          'Widget UID': widgetUid,
+          'Cache Key': cacheKey,
+          'Is Cached': !!localStorage.getItem(cacheKey),
+          'Expiry Time': localStorage.getItem(expiryKey),
+          'Expires At': new Date(parseInt(localStorage.getItem(expiryKey) || '0')),
+          'Is Valid': Date.now() < parseInt(localStorage.getItem(expiryKey) || '0'),
+          'Cache Size': localStorage.getItem(cacheKey)?.length || 0
+        };
+        
+        console.table(status);
+        return status;
+      };
+
+      window.clearCache = function() {
+        const widgetUid = '2ce27b521cc946329b49be168dcfa7e8';
+        localStorage.removeItem(`eai_widget_cache_${widgetUid}`);
+        localStorage.removeItem(`eai_widget_cache_${widgetUid}_expiry`);
+        console.log('✅ Widget cache cleared - next load will fetch fresh data');
+      };
+
+      // Performance monitoring
+      window.addEventListener('load', function() {
+        const loadTime = performance.now();
+        console.log(`⚡ Services page loaded in ${loadTime.toFixed(2)}ms`);
+      });
+    </script>
+  </body>
+</html>
